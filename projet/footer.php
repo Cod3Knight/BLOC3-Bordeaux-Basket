@@ -1,11 +1,11 @@
 <footer>
         <div class="fin">
             <ul>
-                <li>accueil</li>
-                <li>Club</li>
-                <li>Contact</li>
-                <li>Plan du site</li>
-                <li>Mentions légales</li>
+                <a href="#"><li>accueil</li></a>
+                <a href="club.php"><li>Club</li></a>
+                <a href="Contact.php"><li>Contact</li></a>
+                <a href="plan.php"><li>Plan du site</li></a>
+                <a href="mentions_legales.php"><li>Mentions légales</li></a>
             </ul>
             <ul>
                 <a href="https://www.instagram.com/bordeauxbastidebasket/"target="_blank"  > <li><i class="fa-brands fa-square-instagram"></i></li></a>
