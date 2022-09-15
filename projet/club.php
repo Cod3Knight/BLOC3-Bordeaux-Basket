@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bordeaux-basket</title>
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/style_club.css"> -->
+     <link rel="stylesheet" href="css/style_club.css">
     <!-- icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="icon" type="img/png" href="images/logo.png">
@@ -15,6 +14,7 @@
 <body>
     <!-- header  -->
     <?php include("header.php"); ?>
+    <div class="container">
         <div class="club">
             <h1>Historique du club</h1>
             <p>BORDEAUX BASKET est le survivant de W. BORDEAUX BASKET qui a du s'arrêter le 12.09.2003.
@@ -43,6 +43,7 @@
                 C'est ainsi qu'à l'Assemblée Générale du mois de Juin 2015, il a été voté notre nouvelle appellation : <br>
             <strong> BORDEAUX BASTIDE BASKET</strong></p>
             <h2>Les Coaches</h2>
+            
             <p>
              <ul>
                 <li>Yann DUBOURG</li>
@@ -71,6 +72,7 @@
             <h4>COORDONNÉES</h4>
             <p>Salle PROMIS<br>Rue De Cénac<br>33100 BORDEAUX
             </p>
+            </div>
             </div>
     <!-- footer -->
     <?php include("footer.php"); ?>
