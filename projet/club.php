@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bordeaux-basket</title>
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/style_club.css"> -->
+     <link rel="stylesheet" href="css/style_club.css">
     <!-- icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="icon" type="img/png" href="images/logo.png">
