@@ -15,7 +15,7 @@ if (isset($_POST['save'])) { // si le bouton Enregistrer du formulaire est cliqu
     $filename = $_FILES['myfile']['name'];
 
     // destination du fichier dans le serveur
-    $destination = 'uploads/' . $filename;
+    $destination = 'C:/MAMP/htdocs/conn_admin_users/File-upload-download/uploads/' . $filename;
 
     // recup. l'extension de fichier
     $extension = pathinfo($filename, PATHINFO_EXTENSION);
@@ -26,7 +26,7 @@ if (isset($_POST['save'])) { // si le bouton Enregistrer du formulaire est cliqu
 
     if (!in_array($extension, ['zip', 'pdf', 'docx', 'ppt', 'csv', 'txt', 'rar', 'gif', 'png', 'jpg'])) {
         echo "TON EXTENSION DOIT ETRE EN = .zip, .pdf .docx ou .csv";
-    } elseif ($_FILES['myfile']['size'] > 1000000) { // le fichier ne doit pas dépasser 1 Mégaoctet
+    } elseif ($_FILES['myfile']['size'] > 2000000) { // le fichier ne doit pas dépasser 1 Mégaoctet
         echo "Fichier trop volumineux!";
     } else {
         // déplacer le fichier téléchargé (temporaire) vers la destination spécifiée
@@ -50,7 +50,7 @@ if (isset($_GET['file_id'])) {
     $result = mysqli_query($conn, $sql);
 
     $file = mysqli_fetch_assoc($result);
-    $filepath = 'uploads/' . $file['name'];
+    $filepath = 'C:\MAMP\htdocs\conn_admin_users\File-upload-download\uploads' . $file['name'];
 
     if (file_exists($filepath)) {
         header('Content-Description: File Transfer');
@@ -60,7 +60,7 @@ if (isset($_GET['file_id'])) {
         header('Cache-Control: must-revalidate');
         header('Pragma: public');
         header('Content-Length: ' . filesize('uploads/' . $file['name']));
-        readfile('uploads/' . $file['name']);
+        readfile('\uploads' . $file['name']);
 
         // Compteur de DL +1
         $newCount = $file['downloads'] + 1;

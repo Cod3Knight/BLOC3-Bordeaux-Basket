@@ -107,7 +107,7 @@ JUSTE LES INFO AVEC LES TITRES DES COLONNES ->(PDO::FETCH_ASSOC) */
                                 <td><?= $admin_users['username'] ?></td> 
                                 <td><?= $admin_users['email'] ?></td>
                                 <td><?= $admin_users['user_type'] ?></td>
-                                <td><?= $admin_users['password'] ?></td>
+                                <td>***********</td>
                                 <td><?= $admin_users['date_created'] ?></td>
                                 <td><?= $admin_users['date_modified'] ?></td>
                                 <td><a href="details.php?id=<?= $users['id'] ?>">Editer</a></td> 

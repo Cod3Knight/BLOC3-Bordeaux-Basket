@@ -47,8 +47,9 @@
 			</div>
 		</div>
 		<?php
-		
 		include"C:\MAMP\htdocs\projet\download_doc.php";
+		include"C:\MAMP\htdocs\conn_admin_users\File-upload-download\index.php";	
+		include"C:\MAMP\htdocs\conn_admin_users\File-upload-download\downloads.php";
 		?>
 	</div>
 </body>

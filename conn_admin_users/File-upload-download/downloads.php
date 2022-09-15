@@ -13,8 +13,8 @@
 <thead>
     <th>ID</th>
     <th>Nom du fichier</th>
-    <th>Taille (in mb)</th>
-    <th>Téléchargements</th>
+    <th>Taille (mb)</th>
+    <th>DL</th>
     <th>Action</th>
 </thead>
 <tbody>
@@ -24,7 +24,7 @@
       <td><?php echo $file['name']; ?></td>
       <td><?php echo floor($file['size'] / 1000) . ' KB'; ?></td>
       <td><?php echo $file['downloads']; ?></td>
-      <td><a href="downloads.php?file_id=<?php echo $file['id'] ?>">TELECHARGER</a></td>
+      <td><a href="downloads.php?file_id=<?php echo $file['id'] ?>">DL FICHIER</a></td>
     </tr>
   <?php endforeach;?>
 
